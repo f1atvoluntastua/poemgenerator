@@ -37,7 +37,6 @@ Here I want to mention the different variations in architecture that I have used
 the model "modelword3.h5". 
 To test each model, we can choose different seed_text as input for example "Dark", "Together" etc.
 for the model to generate more and more words, we can change the n_words parameter accordingly.
-All of these models will be uploaded in my repository.
 The model that generates poems that satisfies my goal of this project is "modelword3.h5"
 
 Modelword.h5 epochs=50 batch_size= 100 units = 400
