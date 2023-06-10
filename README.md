@@ -1,6 +1,7 @@
 # poemgenerator
 Machine Learning Project which involves creating dataset, training a model and evaluating its performance
 
+
 Motivation/Goal of this project:
 The main goal of this project was to uplift people who are suffering from depression using the help of poems.
 These poems are generated using RNN (LSTM).
@@ -71,6 +72,7 @@ modelword4.h5 epochs=74 batch_size = 60 units = 600
 - who need at her call in each fear that is not alone the city that life may be an unseen dawn life
 - by love's light amidst the waves where life may brew our love is deep as time we are my strength is unfurled
 
+--------------From this point onwards I trained my model with a larger dataset----------------------------------------
 poem.h5, epochs=12, bsize=50, Units=500
 learning rate=0.01
 
@@ -124,6 +126,8 @@ and punctuation were poor. The words in the poem, do give a sense of motivation 
 
 
 How to train the model?
+NOTE: i trained my model first with a dataset containing 459 poems, then i trained another model with a larger dataset.
+That is why I have two notebooks.
 use the JMJpoemgeneratorMelvin.ipynb 
 the model is peom3.h5
 the dataset is modified_poems.txt
