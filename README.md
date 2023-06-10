@@ -74,3 +74,17 @@ modelword4.h5 epochs=74 batch_size = 60 units = 600
 - by love's light amidst the waves where life may brew our love is deep as time we are my strength is unfurled
 
 These poems were evaluated by my friends who all have in depth knowledge in English.
+
+
+How to train the model?
+-Upload the dataset
+-Run each code block
+For training I used the GPU T4 and higher RAM (Google colab)
+
+How to use the model?
+You should have the same Tokenizer, that was used to train the model to work the code.
+Then run the code.
+The parameters that you can alter for generating poems are seed_text and n_words.
+seed_text is a word or a sequence of words you can enter in the code as a String.
+n-words is the total number of words to be generated.
+
