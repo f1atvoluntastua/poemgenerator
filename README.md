@@ -64,13 +64,13 @@ _the soul like stories of silent will it does fall by love's healing but in hues
 
 
 modelwordgigantic.h5 epochs=82 batch_size = 50 units = 700
-deep echoes tales of joy and how bearing the day beneath the echoes of conflict and their gentle embrace forever by each ancient hopeful light each drop nourishes together we are a testament
-from america's waves skies from every waves to every turn so vast whispers holds secrets of unity can find our tide from
-mile amidst it whispers amidst the waves hills whispers soothing from yet waves it takes flight so yet from every bustling streets
+- deep echoes tales of joy and how bearing the day beneath the echoes of conflict and their gentle embrace forever by each ancient hopeful light each drop nourishes          together we are a testament
+- from america's waves skies from every waves to every turn so vast whispers holds secrets of unity can find our tide from
+- mile amidst it whispers amidst the waves hills whispers soothing from yet waves it takes flight so yet from every bustling streets
 
 modelword4.h5 epochs=74 batch_size = 60 units = 600
-is but amidst the waves inspire your soul with divine finds despair remember an space and bright never to mend even amidst the waves where faith is ever light is but yet is
-who need at her call in each fear that is not alone the city that life may be an unseen dawn life
-by love's light amidst the waves where life may brew our love is deep as time we are my strength is unfurled
+- is but amidst the waves inspire your soul with divine finds despair remember an space and bright never to mend even amidst the waves where faith is ever light is but yet   is
+- who need at her call in each fear that is not alone the city that life may be an unseen dawn life
+- by love's light amidst the waves where life may brew our love is deep as time we are my strength is unfurled
 
-
+These poems were evaluated by my friends who all have in depth knowledge in English.
