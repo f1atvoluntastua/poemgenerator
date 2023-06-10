@@ -17,8 +17,8 @@ Online I couldn't find any datasets that contain poems with a sense of uplifting
 Due to this reason I created my own dataset of uplifting peoms with 4 lines each using GPT-4.
 All these poems were then generated into a .txt file ("poems.txt"), to which I did some cleaning, such as removing
 unnecessary lines inbetween poems etc. The dataset that I finally used was ("modified_poems.txt") which is uploaded in this Git Repository.
-My dataset contains 459 peoms that I created myself using GPT-4.
-In this link below, you will find the different themes I gave GPT-4 to generate the poems.
+My dataset contains approx. 930 peoms that I created myself using GPT-4.
+In this link below, you will find the different prompts I gave GPT-4 to generate the poems.
 https://chat.openai.com/share/e3fa85e3-7f92-4d52-893b-bb81b04bcaf0
 
 Modeling:
@@ -30,14 +30,13 @@ These were the preprocess of building the model:
 4. Prepare Input and Output pairs
 5. Define Total Unique Words
 6. Encode the output
-After 1-6 I have processed the input "x" and the output "y" data.
+After 1-6 I have preprocessed the input "x" and the output "y" data.
 
 The modeling part and the architecture I have used can be seen from the code.
 Here I want to mention the different variations in architecture that I have used and their respective outputs, because of which i decided to use
-the model "modelword3.h5". 
-To test each model, we can choose different seed_text as input for example "Dark", "Together" etc.
+the model "poem3.h5". 
+To test each model, we can choose different seed_text as input for example "Uplifting Souls", "Dark", "Together" etc.
 for the model to generate more and more words, we can change the n_words parameter accordingly.
-The model that generates poems that satisfies my goal of this project is "modelword3.h5"
 
 Modelword.h5 epochs=50 batch_size= 100 units = 400
 - lullaby resides through every dance hope ignites a lullaby serene a radiant gentle lullaby at eventide the moon's soft light paints a solemn sight can keep the gloom on the
@@ -72,10 +71,62 @@ modelword4.h5 epochs=74 batch_size = 60 units = 600
 - who need at her call in each fear that is not alone the city that life may be an unseen dawn life
 - by love's light amidst the waves where life may brew our love is deep as time we are my strength is unfurled
 
-These poems were evaluated by my friends who all have in depth knowledge in English.
+poem.h5, epochs=12, bsize=50, Units=500
+learning rate=0.01
+
+output:
+and light and peace and
+peace and peace and peace
+and peace and peace and
+peace and peace and peace
+and peace
+
+poem.h5, epochs complete=35, bsize=50, Units = 300 learning rate=0.01
+
+output with seed text "India":
+free whispers on hope's presence
+is a melody sung by
+a beacon of light in
+the darkest night steady calm
+and serene a promise of
+
+poem2.h5, epochs completed=35, bsize=50, Units = 400 learning rate=0.001
+output with seed_text "India"
+Epoch 70/75
+456/456 [==============================] - 4s 9ms/step - loss: 0.2661 - val_loss: 9.1319
+Epoch 71/75
+456/456 [==============================] - 4s 9ms/step - loss: 0.2507 - val_loss: 9.1534
+Epoch 72/75
+456/456 [==============================] - 4s 9ms/step - loss: 0.2405 - val_loss: 9.1511
+Epoch 73/75
+456/456 [==============================] - 4s 9ms/step - loss: 0.2296 - val_loss: 9.2486
+Epoch 74/75
+456/456 [==============================] - 4s 9ms/step - loss: 0.2239 - val_loss: 9.3994
+Epoch 75/75
+456/456 [==============================] - 4s 9ms/step - loss: 0.2078 - val_loss: 9.4394
+
+we can see that the loss is getting better
+
+poem3.h5, epochs completed=92, bsize=40, Units = 440 learning rate=0.001
+Epoch 92/120
+570/570 [==============================] - 5s 9ms/step - loss: 0.0978 - val_loss: 11.7174
+output with seed_text "Uplifting Souls"
+
+as radiant power day in
+the realm of sunshine dreams
+find their way a symphony
+of possibilities where dreams can
+near it fuels determination igniting
+
+These poems were evaluated by my friends who all have in depth knowledge in English.poem, do give a sense of motivation but to bring the poetic beauty to it, improvements are necessary.
+Their validation was that the model generated a bunch of sentences in a poetic way, but the grammar 
+and punctuation were poor. The words in the poem, do give a sense of motivation but to bring the poetic beauty to it, improvements are necessary.
 
 
 How to train the model?
+use the JMJpoemgeneratorMelvin.ipynb 
+the model is peom3.h5
+the dataset is modified_poems.txt
 -Upload the dataset
 -Run each code block
 For training I used the GPU T4 and higher RAM (Google colab)
