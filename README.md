@@ -124,6 +124,10 @@ These poems were evaluated by my friends who all have in depth knowledge in Engl
 Their validation was that the model generated a bunch of sentences in a poetic way, but the grammar 
 and punctuation were poor. The words in the poem, do give a sense of motivation but to bring the poetic beauty to it, improvements are necessary.
 
+Why did I choose poem3.h5?
+The model poem3.h5 resulted in a loss of 0.0978
+Out of all the generated poems by different model, this model's poems have a better coherence, words, which gives a sense of hope.
+Thus without the normal qualifications of a poem, it still gives a sense of hope through the words used in it.
 
 How to train the model?
 NOTE: i trained my model first with a dataset containing 459 poems, then i trained another model with a larger dataset.
